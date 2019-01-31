@@ -377,9 +377,9 @@ update_if_necessary()
 call_jps()
 {
     if [ "${VERBOSE}" = true ] ; then
-        "${JAVA_HOME}"/bin/jps -l -v
+        "${JAVA_HOME}"/bin/jps -l -m -v
     else
-        "${JAVA_HOME}"/bin/jps -l
+        "${JAVA_HOME}"/bin/jps -l -m
     fi
 }
 
